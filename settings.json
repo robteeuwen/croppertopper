@@ -1,8 +1,9 @@
 {
-  "xsize": 1000,
-  "ysize": 1500,
-  "topDistance": 0,
-  "bottomDistance": 0,
+  "xsize": 3000,
+  "ysize": 4500,
+  "topDistance": 0.08,
+  "bottomDistance": 0.05,
   "rawloc": "D:/Other/wouterfotos/Archive/Pre/",
-  "foldername": "output2"
+  "foldername": "outputlowquality",
+  "imageQuality": 50
 }

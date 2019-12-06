@@ -13,6 +13,7 @@ with open('settings.json') as json_file:
     bottomDistance = settings['bottomDistance']
     rawloc = settings['rawloc']
     foldername = settings['foldername']
+    imageQuality = settings['imageQuality']
 
 printOutput = 0
 plotSteps = 0
@@ -183,7 +184,7 @@ def analyse_image(file,rawloc,xsize,ysize,topDistance,bottomDistance,printOutput
         plt.xticks([]), plt.yticks([])  # to hide tick values on X and Y axis
         plt.show()
 
-    writeSuccess = cv2.imwrite(writeloc + file,resized)
+    writeSuccess = cv2.imwrite(writeloc + file,resized,[int(cv2.IMWRITE_JPEG_QUALITY), imageQuality])
 
     return writeSuccess
 
