@@ -176,7 +176,7 @@ def analyse_image(file,rawloc,xsize,ysize,topDistance,bottomDistance,printOutput
         cropped2 = np.concatenate((Ls,subj,Rs),1)
 
 
-    resized = cv2.resize(cropped2,(1000,1500))
+    resized = cv2.resize(cropped2,(xsize,ysize))
 
     if plotSteps:
         plt.imshow(resized, cmap = 'gray', interpolation = 'bicubic')
